@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: 'hsl(var(--primary-light))',
+					dark: 'hsl(var(--primary-dark))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +54,24 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				status: {
+					critical: 'hsl(var(--status-critical))',
+					'critical-foreground': 'hsl(var(--status-critical-foreground))',
+					warning: 'hsl(var(--status-warning))',
+					'warning-foreground': 'hsl(var(--status-warning-foreground))',
+					success: 'hsl(var(--status-success))',
+					'success-foreground': 'hsl(var(--status-success-foreground))',
+					info: 'hsl(var(--status-info))',
+					'info-foreground': 'hsl(var(--status-info-foreground))'
+				},
+				score: {
+					green: 'hsl(var(--score-green))',
+					'green-light': 'hsl(var(--score-green-light))',
+					yellow: 'hsl(var(--score-yellow))',
+					'yellow-light': 'hsl(var(--score-yellow-light))',
+					red: 'hsl(var(--score-red))',
+					'red-light': 'hsl(var(--score-red-light))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +82,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-success': 'var(--gradient-success)',
+				'gradient-warning': 'var(--gradient-warning)',
+				'gradient-critical': 'var(--gradient-critical)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'status': 'var(--shadow-status)',
+				'critical': 'var(--shadow-critical)'
+			},
+			transitionTimingFunction: {
+				'medical': 'var(--transition-medical)',
+				'smooth': 'var(--transition-smooth)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
